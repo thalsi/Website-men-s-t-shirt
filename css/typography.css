@@ -1,0 +1,208 @@
+/* =========================================================
+   TYPOGRAPHY.CSS
+
+   Typography System
+
+   typography.css
+   │
+   ├── 🔴 MUST USE
+   │   ├── 01. Base typography
+   │   ├── 02. Font family
+   │   ├── 03. Font size
+   │   ├── 04. Font weight
+   │   ├── 05. Line height
+   │   ├── 06. Heading styles
+   │   ├── 07. Paragraph styles
+   │   ├── 08. Link styles
+   │   └── 09. Text alignment
+   │
+   ├── 🟡 RECOMMENDED
+   │   ├── 10. Letter spacing
+   │   ├── 11. Text colors
+   │   ├── 12. Small / helper text
+   │   ├── 13. Label text
+   │   ├── 14. Caption text
+   │   ├── 15. Strong / emphasis
+   │   ├── 16. List typography
+   │   └── 17. Responsive typography
+   │
+   └── 🟢 OPTIONAL
+       ├── 18. Display text
+       ├── 19. Text truncation
+       ├── 20. Text transformation
+       ├── 21. Code / monospace text
+       ├── 22. Blockquote
+       └── 23. Component-specific typography
+
+   ========================================================= */
+
+   /* =========================
+   Base Typography
+   ========================= */
+
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
+  color: var(--color-text);
+}
+
+
+/* =========================
+   Headings
+   ========================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-heading);
+  color: var(--color-text);
+}
+
+h1 {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+}
+
+h2 {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+}
+
+h3 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+}
+
+h4 {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+}
+
+h5 {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+}
+
+h6 {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+}
+
+
+/* =========================
+   Paragraph
+   ========================= */
+
+p {
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-secondary);
+}
+
+
+/* =========================
+   Links
+   ========================= */
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================
+   Text Utilities
+   ========================= */
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+
+/* =========================
+   Font Weight
+   ========================= */
+
+.fw-regular {
+  font-weight: var(--font-weight-regular);
+}
+
+.fw-medium {
+  font-weight: var(--font-weight-medium);
+}
+
+.fw-semibold {
+  font-weight: var(--font-weight-semibold);
+}
+
+.fw-bold {
+  font-weight: var(--font-weight-bold);
+}
+
+
+/* =========================
+   Text Colors
+   ========================= */
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-text-secondary);
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+}
+
+.text-success {
+  color: var(--color-success);
+}
+
+.text-warning {
+  color: var(--color-warning);
+}
+
+.text-danger {
+  color: var(--color-danger);
+}
+
+
+/* =========================
+   Small Text
+   ========================= */
+
+small {
+  font-size: var(--font-size-sm);
+}
+
+
+/* =========================
+   Strong
+   ========================= */
+
+strong,
+b {
+  font-weight: var(--font-weight-bold);
+}
