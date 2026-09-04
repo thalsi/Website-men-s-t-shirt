@@ -1,0 +1,579 @@
+/* =========================================================
+
+   LAYOUT.CSS
+
+   Page Structure
+   Containers, Grid, Flexbox, Sections, Positioning, Responsive Layout
+
+   layout.css
+
+│
+├── 🔴 MUST USE
+│   ├── 01. Container
+│   ├── 02. Container widths
+│   ├── 03. Section
+│   ├── 04. Row / Column
+│   ├── 05. Flex utilities
+│   ├── 06. Grid utilities
+│   ├── 07. Alignment
+│   ├── 08. Spacing / Gap
+│   ├── 09. Positioning
+│   └── 10. Clearfix
+│
+├── 🟡 RECOMMENDED
+│   ├── 11. Main layout
+│   ├── 12. Header layout
+│   ├── 13. Navigation layout
+│   ├── 14. Sidebar layout
+│   ├── 15. Content layout
+│   ├── 16. Two-column layout
+│   ├── 17. Three-column layout
+│   ├── 18. Stack layout
+│   ├── 19. Split layout
+│   ├── 20. Sticky layout
+│   └── 21. Responsive layout
+│
+└── 🟢 OPTIONAL
+    ├── 22. Full-width layout
+    ├── 23. Centered layout
+    ├── 24. Overlay layout
+    ├── 25. Aspect-ratio containers
+    ├── 26. Masonry layout
+    └── 27. Page-specific layout
+
+   ========================================================= */
+
+
+/* =========================================================
+   01. CONTAINER
+   ========================================================= */
+
+.container {
+  width: 100%;
+  max-width: var(--container-xl);
+  margin-inline: auto;
+  padding-inline: var(--space-4);
+}
+
+.container-fluid {
+  width: 100%;
+  padding-inline: var(--space-4);
+}
+
+
+/* =========================================================
+   02. CONTAINER WIDTHS
+   ========================================================= */
+
+.container-sm {
+  max-width: var(--container-sm);
+}
+
+.container-md {
+  max-width: var(--container-md);
+}
+
+.container-lg {
+  max-width: var(--container-lg);
+}
+
+.container-xl {
+  max-width: var(--container-xl);
+}
+
+.container-2xl {
+  max-width: var(--container-2xl);
+}
+
+
+/* =========================================================
+   03. SECTION
+   ========================================================= */
+
+.section {
+  width: 100%;
+  padding-block: var(--space-12);
+}
+
+.section-sm {
+  padding-block: var(--space-8);
+}
+
+.section-lg {
+  padding-block: var(--space-16);
+}
+
+
+/* =========================================================
+   04. ROW / COLUMN
+   ========================================================= */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* =========================================================
+   05. FLEX UTILITIES
+   ========================================================= */
+
+.flex {
+  display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+
+/* =========================================================
+   06. GRID UTILITIES
+   ========================================================= */
+
+.grid {
+  display: grid;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+
+/* =========================================================
+   07. ALIGNMENT
+   ========================================================= */
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+
+/* =========================================================
+   08. SPACING / GAP
+   ========================================================= */
+
+.gap-1 {
+  gap: var(--space-1);
+}
+
+.gap-2 {
+  gap: var(--space-2);
+}
+
+.gap-3 {
+  gap: var(--space-3);
+}
+
+.gap-4 {
+  gap: var(--space-4);
+}
+
+.gap-6 {
+  gap: var(--space-6);
+}
+
+.gap-8 {
+  gap: var(--space-8);
+}
+
+.gap-12 {
+  gap: var(--space-12);
+}
+
+
+/* =========================================================
+   09. POSITIONING
+   ========================================================= */
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.static {
+  position: static;
+}
+
+.inset-0 {
+  inset: 0;
+}
+
+
+/* =========================================================
+   10. CLEARFIX
+   ========================================================= */
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* =========================================================
+   11. MAIN LAYOUT
+   ========================================================= */
+
+.page {
+  min-height: 100vh;
+}
+
+.main-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  min-width: 0;
+}
+
+
+/* =========================================================
+   12. HEADER LAYOUT
+   ========================================================= */
+
+.header {
+  width: 100%;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* =========================================================
+   13. NAVIGATION LAYOUT
+   ========================================================= */
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+
+/* =========================================================
+   14. SIDEBAR LAYOUT
+   ========================================================= */
+
+.sidebar-layout {
+  display: flex;
+}
+
+.sidebar {
+  flex: 0 0 280px;
+}
+
+.sidebar-content {
+  flex: 1;
+  min-width: 0;
+}
+
+
+/* =========================================================
+   15. CONTENT LAYOUT
+   ========================================================= */
+
+.content {
+  width: 100%;
+  min-width: 0;
+}
+
+.content-inner {
+  width: 100%;
+  max-width: var(--content-width);
+  margin-inline: auto;
+}
+
+
+/* =========================================================
+   16. TWO-COLUMN LAYOUT
+   ========================================================= */
+
+.layout-2-column {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-6);
+}
+
+
+/* =========================================================
+   17. THREE-COLUMN LAYOUT
+   ========================================================= */
+
+.layout-3-column {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-6);
+}
+
+
+/* =========================================================
+   18. STACK LAYOUT
+   ========================================================= */
+
+.stack {
+  display: flex;
+  flex-direction: column;
+}
+
+.stack-sm {
+  gap: var(--space-2);
+}
+
+.stack-md {
+  gap: var(--space-4);
+}
+
+.stack-lg {
+  gap: var(--space-8);
+}
+
+
+/* =========================================================
+   19. SPLIT LAYOUT
+   ========================================================= */
+
+.split {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-6);
+}
+
+.split > * {
+  min-width: 0;
+}
+
+
+/* =========================================================
+   20. STICKY LAYOUT
+   ========================================================= */
+
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-sticky);
+}
+
+.sticky-sidebar {
+  position: sticky;
+  top: var(--space-4);
+}
+
+
+/* =========================================================
+   21. RESPONSIVE LAYOUT
+   ========================================================= */
+
+@media (max-width: 992px) {
+
+  .grid-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .layout-3-column {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sidebar-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    flex: 1;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .grid-3,
+  .grid-2,
+  .layout-2-column,
+  .layout-3-column {
+    grid-template-columns: 1fr;
+  }
+
+  .split {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+@media (max-width: 576px) {
+
+  .container,
+  .container-fluid {
+    padding-inline: var(--space-3);
+  }
+
+  .section {
+    padding-block: var(--space-8);
+  }
+}
+
+
+/* =========================================================
+   22. FULL-WIDTH LAYOUT
+   ========================================================= */
+
+.full-width {
+  width: 100%;
+}
+
+.full-viewport {
+  width: 100vw;
+}
+
+
+/* =========================================================
+   23. CENTERED LAYOUT
+   ========================================================= */
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-horizontal {
+  margin-inline: auto;
+}
+
+
+/* =========================================================
+   24. OVERLAY LAYOUT
+   ========================================================= */
+
+.overlay {
+  position: absolute;
+  inset: 0;
+}
+
+
+/* =========================================================
+   25. ASPECT-RATIO CONTAINERS
+   ========================================================= */
+
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
+
+/* =========================================================
+   26. MASONRY LAYOUT
+   ========================================================= */
+
+.masonry {
+  columns: 3;
+  column-gap: var(--space-6);
+}
+
+.masonry > * {
+  break-inside: avoid;
+  margin-bottom: var(--space-6);
+}
+
+
+/* =========================================================
+   27. PAGE-SPECIFIC LAYOUT
+   ========================================================= */
+
+/*
+.page-home {}
+.page-about {}
+.page-contact {}
+.page-dashboard {}
+*/

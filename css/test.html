@@ -1,0 +1,804 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Layout CSS Examples</title>
+
+    <!-- Your CSS files -->
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="typography.css">
+    <link rel="stylesheet" href="layout.css">
+
+    <style>
+        /* Demo-only styles */
+        .demo-box {
+            padding: 20px;
+            background: #e8eeee;
+            border: 1px solid #ccc;
+        }
+
+        .demo-sidebar {
+            background: #ddd;
+            padding: 20px;
+            width: 280px;
+        }
+
+        .demo-content {
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .demo-item {
+            padding: 20px;
+            background: #eee;
+            border: 1px solid #ccc;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =====================================================
+         01. CONTAINER
+         ===================================================== -->
+
+    <section>
+
+        <div class="container">
+
+            <h2>01. Container</h2>
+
+            <div class="demo-box">
+                Container with maximum width
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         02. CONTAINER WIDTHS
+         ===================================================== -->
+
+    <section>
+
+        <div class="container container-lg">
+
+            <h2>02. Container Width</h2>
+
+            <div class="demo-box">
+                container-lg
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         03. SECTION
+         ===================================================== -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <h2>03. Section</h2>
+
+            <p>
+                Section provides vertical spacing around content.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         04. ROW / COLUMN
+         ===================================================== -->
+
+    <section>
+
+        <div class="container">
+
+            <h2>04. Row / Column</h2>
+
+            <div class="row">
+
+                <div class="demo-item">
+                    Row Item 1
+                </div>
+
+                <div class="demo-item">
+                    Row Item 2
+                </div>
+
+            </div>
+
+            <br>
+
+            <div class="column gap-4">
+
+                <div class="demo-item">
+                    Column Item 1
+                </div>
+
+                <div class="demo-item">
+                    Column Item 2
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         05. FLEX
+         ===================================================== -->
+
+    <section>
+
+        <div class="container">
+
+            <h2>05. Flex</h2>
+
+            <div class="flex gap-4">
+
+                <div class="demo-item">
+                    Item 1
+                </div>
+
+                <div class="demo-item">
+                    Item 2
+                </div>
+
+                <div class="demo-item">
+                    Item 3
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         06. GRID
+         ===================================================== -->
+
+    <section>
+
+        <div class="container">
+
+            <h2>06. Grid</h2>
+
+            <div class="grid grid-3 gap-4">
+
+                <div class="demo-item">
+                    Grid 1
+                </div>
+
+                <div class="demo-item">
+                    Grid 2
+                </div>
+
+                <div class="demo-item">
+                    Grid 3
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         07. ALIGNMENT
+         ===================================================== -->
+
+    <section>
+
+        <div class="container">
+
+            <h2>07. Alignment</h2>
+
+            <div class="flex items-center justify-between">
+
+                <div class="demo-item">
+                    Left
+                </div>
+
+                <div class="demo-item">
+                    Center
+                </div>
+
+                <div class="demo-item">
+                    Right
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         08. GAP
+         ===================================================== -->
+
+    <section>
+
+        <div class="container">
+
+            <h2>08. Gap</h2>
+
+            <div class="flex gap-8">
+
+                <div class="demo-item">
+                    Item 1
+                </div>
+
+                <div class="demo-item">
+                    Item 2
+                </div>
+
+                <div class="demo-item">
+                    Item 3
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         09. POSITIONING
+         ===================================================== -->
+
+    <section>
+
+        <div class="container">
+
+            <h2>09. Positioning</h2>
+
+            <div class="relative demo-box">
+
+                Parent
+
+                <div class="absolute" style="right: 10px; top: 10px;">
+                    Absolute
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         10. CLEARFIX
+         ===================================================== -->
+
+    <section>
+
+        <div class="container">
+
+            <h2>10. Clearfix</h2>
+
+            <div class="clearfix">
+
+                <div style="float: left;">
+                    Left content
+                </div>
+
+                <div style="float: right;">
+                    Right content
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         11. MAIN LAYOUT
+         ===================================================== -->
+
+    <section>
+
+        <div class="container">
+
+            <h2>11. Main Layout</h2>
+
+        </div>
+
+        <div class="main-layout">
+
+            <aside class="demo-sidebar">
+
+                <h3>Sidebar</h3>
+
+                <p>Dashboard</p>
+                <p>Users</p>
+                <p>Settings</p>
+
+            </aside>
+
+            <main class="main-content demo-content">
+
+                <h3>Main Content</h3>
+
+                <p>
+                    This area automatically takes the remaining width.
+                </p>
+
+            </main>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         12. HEADER LAYOUT
+         ===================================================== -->
+
+    <section>
+
+        <div class="container">
+
+            <h2>12. Header Layout</h2>
+
+            <header class="header">
+
+                <div class="header-inner">
+
+                    <div>
+                        Logo
+                    </div>
+
+                    <nav>
+                        Navigation
+                    </nav>
+
+                    <div>
+                        Profile
+                    </div>
+
+                </div>
+
+            </header>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         13. NAVIGATION
+         ===================================================== -->
+
+    <section>
+
+        <div class="container">
+
+            <h2>13. Navigation</h2>
+
+            <nav class="nav">
+
+                <ul class="nav-list">
+
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         14. SIDEBAR LAYOUT
+         ===================================================== -->
+
+    <section>
+
+        <div class="container">
+
+            <h2>14. Sidebar Layout</h2>
+
+            <div class="sidebar-layout">
+
+                <aside class="sidebar demo-sidebar">
+                    Sidebar
+                </aside>
+
+                <div class="sidebar-content demo-content">
+                    Content
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         15. CONTENT LAYOUT
+         ===================================================== -->
+
+    <section>
+
+        <div class="container">
+
+            <h2>15. Content Layout</h2>
+
+            <div class="content">
+
+                <div class="content-inner">
+
+                    <div class="demo-box">
+                        Centered content area
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         16. TWO COLUMN
+         ===================================================== -->
+
+    <section>
+
+        <div class="container">
+
+            <h2>16. Two Column</h2>
+
+            <div class="layout-2-column">
+
+                <div class="demo-item">
+                    Column 1
+                </div>
+
+                <div class="demo-item">
+                    Column 2
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         17. THREE COLUMN
+         ===================================================== -->
+
+    <section>
+
+        <div class="container">
+
+            <h2>17. Three Column</h2>
+
+            <div class="layout-3-column">
+
+                <div class="demo-item">
+                    Column 1
+                </div>
+
+                <div class="demo-item">
+                    Column 2
+                </div>
+
+                <div class="demo-item">
+                    Column 3
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         18. STACK
+         ===================================================== -->
+
+    <section>
+
+        <div class="container">
+
+            <h2>18. Stack</h2>
+
+            <div class="stack stack-md">
+
+                <div class="demo-item">
+                    Item 1
+                </div>
+
+                <div class="demo-item">
+                    Item 2
+                </div>
+
+                <div class="demo-item">
+                    Item 3
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         19. SPLIT
+         ===================================================== -->
+
+    <section>
+
+        <div class="container">
+
+            <h2>19. Split</h2>
+
+            <div class="split">
+
+                <div>
+                    <h3>Title</h3>
+                    <p>Description</p>
+                </div>
+
+                <button>
+                    Action
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         20. STICKY
+         ===================================================== -->
+
+    <section>
+
+        <div class="container">
+
+            <h2>20. Sticky</h2>
+
+            <div class="sticky-top demo-box">
+
+                Sticky Header
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         21. RESPONSIVE LAYOUT
+         ===================================================== -->
+
+    <section>
+
+        <div class="container">
+
+            <h2>21. Responsive Layout</h2>
+
+            <div class="grid grid-4 gap-4">
+
+                <div class="demo-item">
+                    1
+                </div>
+
+                <div class="demo-item">
+                    2
+                </div>
+
+                <div class="demo-item">
+                    3
+                </div>
+
+                <div class="demo-item">
+                    4
+                </div>
+
+            </div>
+
+            <p>
+                Resize the browser to see the responsive behavior.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         22. FULL WIDTH
+         ===================================================== -->
+
+    <section>
+
+        <div class="full-width demo-box">
+
+            Full Width Content
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         23. CENTER
+         ===================================================== -->
+
+    <section>
+
+        <div class="container">
+
+            <h2>23. Center</h2>
+
+            <div class="center demo-box">
+
+                <p>
+                    Horizontally + vertically centered
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         24. OVERLAY
+         ===================================================== -->
+
+    <section>
+
+        <div class="container">
+
+            <h2>24. Overlay</h2>
+
+            <div class="relative demo-box" style="height: 200px;">
+
+                <div class="overlay">
+                    Overlay
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         25. ASPECT RATIO
+         ===================================================== -->
+
+    <section>
+
+        <div class="container">
+
+            <h2>25. Aspect Ratio</h2>
+
+            <div class="aspect-video demo-box">
+
+                16 : 9
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         26. MASONRY
+         ===================================================== -->
+
+    <section>
+
+        <div class="container">
+
+            <h2>26. Masonry</h2>
+
+            <div class="masonry">
+
+                <div class="demo-item">
+                    Short item
+                </div>
+
+                <div class="demo-item">
+                    Medium item<br>
+                    More content<br>
+                    More content
+                </div>
+
+                <div class="demo-item">
+                    Large item<br>
+                    More content<br>
+                    More content<br>
+                    More content<br>
+                    More content
+                </div>
+
+                <div class="demo-item">
+                    Another item
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         27. PAGE SPECIFIC
+         ===================================================== -->
+
+    <section class="page-home">
+
+        <div class="container">
+
+            <h2>27. Page Specific Layout</h2>
+
+            <div class="demo-box">
+
+                Home page specific layout
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>
+```
