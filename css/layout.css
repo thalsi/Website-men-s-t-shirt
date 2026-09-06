@@ -151,6 +151,9 @@
   flex: 1;
 }
 
+.flex-justify-content-space-between{
+  justify-content: space-between;
+}
 
 /* =========================================================
    06. GRID UTILITIES

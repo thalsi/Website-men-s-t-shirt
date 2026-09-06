@@ -3,3 +3,103 @@
 @import 'typography.css';
 @import 'layout.css';
 @import 'components.css';
+
+/* =========================================================
+   # HEADER
+   ========================================================= */
+
+.vance-header {
+    background-color: var(--color-primary);
+    border-bottom:1px solid var( --color-border);
+}
+
+/* =========================================================
+   # NAVIGATION
+   ========================================================= */
+.vance-nav{
+    min-height: 80px;
+    gap: var( --space-8);
+}
+
+/* =========================================================
+   # LOGO
+   ========================================================= */
+.logo {
+    flex-shrink: 0;
+
+    color: var(--color-text-inverse);
+    font-size: var(--font-size-xl);
+}
+
+.logo span{
+    color: var(--color-primary-light);
+}
+
+/* =========================================================
+   # NAVIGATION LIST
+   ========================================================= */
+.vance-nav-list{
+    margin: auto;
+}
+
+.vance-nav-list a {
+    text-decoration: none;
+    color: var(--color-text-inverse);
+
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+
+    transition: color 0.2s ease;
+}
+
+.vance-nav-list a:hover {
+    color: var(--color-primary-light);
+}
+
+/* =========================================================
+   05. NAVIGATION ACTIONS
+   ========================================================= */
+.nav-actions{
+    display: flex;
+    align-items: center;
+
+    flex-shrink: 0;
+}
+
+.nav-actions .btn {
+    color: var(--color-text-inverse);
+}
+
+.nav-actions i{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+    width: var(--font-size-4xl);
+    height: var(--font-size-4xl);
+}
+
+.nav-actions .cart-count-container{
+    position: relative;
+}
+
+.nav-actions .cart-count-container .cart-count{
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    background-color: red;
+    color: inherit;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    font-size: var(--font-size-xs);
+    padding: var(--space-2);
+}
+
+.nav-actions .btn{
+    padding: 0px;
+}
