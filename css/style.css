@@ -10,15 +10,15 @@
 
 .vance-header {
     background-color: var(--color-primary);
-    border-bottom:1px solid var( --color-border);
+    border-bottom: 1px solid var(--color-border);
 }
 
 /* =========================================================
    # NAVIGATION
    ========================================================= */
-.vance-nav{
+.vance-nav {
     min-height: 80px;
-    gap: var( --space-8);
+    gap: var(--space-8);
 }
 
 /* =========================================================
@@ -31,14 +31,14 @@
     font-size: var(--font-size-xl);
 }
 
-.logo span{
+.logo span {
     color: var(--color-primary-light);
 }
 
 /* =========================================================
    # NAVIGATION LIST
    ========================================================= */
-.vance-nav-list{
+.vance-nav-list {
     margin: auto;
 }
 
@@ -59,7 +59,7 @@
 /* =========================================================
    05. NAVIGATION ACTIONS
    ========================================================= */
-.nav-actions{
+.nav-actions {
     display: flex;
     align-items: center;
 
@@ -70,7 +70,7 @@
     color: var(--color-text-inverse);
 }
 
-.nav-actions i{
+.nav-actions i {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -79,11 +79,11 @@
     height: var(--font-size-4xl);
 }
 
-.nav-actions .cart-count-container{
+.nav-actions .cart-count-container {
     position: relative;
 }
 
-.nav-actions .cart-count-container .cart-count{
+.nav-actions .cart-count-container .cart-count {
     position: absolute;
     right: 4px;
     top: 4px;
@@ -100,6 +100,61 @@
     padding: var(--space-2);
 }
 
-.nav-actions .btn{
+.nav-actions .btn {
     padding: 0px;
+}
+
+/* = HAMBURGER = */
+.vance-menu-toggle {
+    display: none;
+}
+
+.vance-mobile-nav-list{
+    display: none;
+}
+
+/* ========================================================= MOBILE ========================================================= */
+@media (max-width: 768px) {
+
+    /* Hide desktop navigation */
+    .vance-nav-list {
+        display: none;
+    }
+
+    .vance-mobile-nav-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .vance-mobile-nav-list li {
+        padding-block: var(--space-3);
+    }
+
+    .vance-mobile-nav-list a {
+        color: var(--color-text-inverse);
+    }
+
+    .nav-actions i {
+        font-size: var(--font-size-xl);
+    }
+
+
+    /* Show hamburger */
+    .vance-menu-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Mobile menu */
+    .vance-mobile-menu {
+        display: none;
+    }
+
+    .vance-mobile-menu.is-open {
+        display: block;
+    }
 }
