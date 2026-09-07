@@ -76,9 +76,12 @@ h2 {
 }
 
 h3 {
-  font-size: var(--font-size-xl);
-  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-regular);
   line-height: var(--line-height-tight);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 h4 {
