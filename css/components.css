@@ -114,6 +114,11 @@
   padding: var(--space-6);
 }
 
+.card:hover{
+  background-color: var( --color-primary-light);
+  border-color: var( --color-border-dark);
+}
+
 .card-header {
   margin-bottom: var(--space-4);
 }

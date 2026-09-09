@@ -208,6 +208,45 @@ main{
 .shop-category-grid .card h4{
     color: var(--color-text-inverse);
 }
+
+
+/* 
+# Find Your Fit
+*/
+.find-your-fit .header .header-title h3{
+    color: var(--color-text);
+}
+
+.find-your-fit .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.find-your-fit .shop-navigation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+}
+
+.find-your-fit .grid{
+    margin-top: var(--space-10);
+    gap: var(--space-6);
+}
+
+.find-your-fit .card-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.find-your-fit .card-content .sub-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 /* ========================================================= MOBILE ========================================================= */
 @media (max-width: 768px) {
 
